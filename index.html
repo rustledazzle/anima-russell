@@ -1,1 +1,125 @@
-<h1>Hello</h1>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PyScript Example</title>
+
+    <!-- Include PyScript CDN -->
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css">
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+
+    <!-- Add custom styling -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 15px;
+            background-color: #154500;
+        }
+
+        .styled-paragraph {
+            color: #333;
+            font-size: 1.2em;
+            background-color: #e0f7fa;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #00796b;
+            width: 75%;
+            margin: 20px auto;
+        }
+        h1 {
+            color:#e0f7fa;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        h2 {
+            color: aquamarine;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Data Privacy and Cyber Awareness Campaign</h1>
+    <h2>Anima, Russell Allen V.</h2>
+    <h2>Reflection</h2>
+    <!-- Define a div to hold the paragraph -->
+    <div id="outputp" class="styled-paragraph"></div>
+    <div id="outputp2" class="styled-paragraph"></div>
+    <div id="outputp3" class="styled-paragraph"></div>
+    <div id="outputp4" class="styled-paragraph"></div>
+    <div id="outputp5" class="styled-paragraph"></div>
+    <div id="outputp6" class="styled-paragraph"></div>
+    <!-- PyScript block -->
+    <py-script>
+        # Python code to create and display HTML content
+
+        # Define the content of the paragraph
+        paragraph = """
+        The Speaker discussed the data privacy act, which is Republic Act No. 10173, 
+        meaning we have rights about our personal data or our personal information. From what I remembered, 
+        from the moment we were born in this world, with at least twenty-four hours, the new-born baby must have 
+        registered information, and that’s when the department will proceed with the registries. This is where our 
+        first personal information is. The speaker also stated that, with no law, we cannot survive in this world. 
+        Personally, for me, I have a part to agree and to disagree, but the most superior decision to me is to 
+        agree with it since I analyzed for a quick time that without law there is no peace. 
+        """
+        
+        paragraph2 = """
+        It also stated that when a person does do a crime, they will always be accountable. There is offense about 
+        that on what punishment will get. Besides that, our personal information is the sensitive data that must not 
+        be shared with everyone since it can be used against you, like identity theft. I heard this Data Privacy Act, 
+        but I always disregard it and don’t get its importance, but this is crucial for people to be aware of what our 
+        place or surroundings are.
+        """
+
+        paragraph3 = """
+        They also said that, when you feel threatened about your safety, you can always file a complaint, but when you 
+        file a complaint, you should also be aware of the need or step you should take; otherwise, they cannot proceed 
+        with the conflict about the complaint you have taken. About the awareness on the internet, we should always be 
+        knowledgeable, but not always one but also aware, as to think before you click. There are different people on 
+        the internet, and you cannot always be on the safe side, as you can be a victim if you are not aware of the things 
+        going on in the internet.
+        """
+        paragraph4 = """
+        Protect your account as secure as possible, such as by not using the same password on different platforms. You can 
+        decide if you want some third-party application, such as password manager, but for me, I cannot use that as I decided 
+        to write on my personal notebook and keep it safe and hidden. For social media platforms, or the important one is Google, 
+        this has the information you have, such as personal identity. I cannot say that Google is a hundred percent safe, but you 
+        can trust that since it is secure if you use it on your own personal device.
+        """
+        paragraph5= """
+        They have this authentication system, which is helpful to be secured for the account. From the way back in 2020, I 
+        could always create a new Google account for a dummy account for my games, but when I tried to create another account 
+        just this past month, it looked like I could not create a dummy account from Google as they are now secured, and I observed 
+        that I cannot log out of my personal or the original account I have since they changed the system. I didn’t say that it 
+        was bad, but for the personal account, it is really secure now.
+        """
+        paragraph6 = """
+        As for the campaign, what I remembered is that "the internet is not safe."  I agree with that, but I will add a saying 
+        as “the internet is not safe if you are not aware of what is happening in your virtual surroundings." 
+        """
+
+        # Find the div with id 'output' and set its innerHTML to the paragraph text
+        output_element = Element("outputp")
+        output_element.write(paragraph)
+
+        output_element = Element("outputp2")
+        output_element.write(paragraph2)
+
+        output_element = Element("outputp3")
+        output_element.write(paragraph3)
+
+        output_element = Element("outputp4")
+        output_element.write(paragraph4)
+
+        output_element = Element("outputp5")
+        output_element.write(paragraph5)
+
+        output_element = Element("outputp6")
+        output_element.write(paragraph6)
+        
+    </py-script>
+
+</body>
+</html>
